@@ -28,7 +28,6 @@ class Title extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 10.0),
       child: Row(
-        // mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
