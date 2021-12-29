@@ -7,7 +7,7 @@ class BasicDesignScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        children: [
+        children: const [
           // image
           Image(image: AssetImage('assets/landscape.jpg')),
           //title
