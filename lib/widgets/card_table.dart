@@ -10,6 +10,7 @@ class CardTable extends StatelessWidget {
         TableRow(
           children: [
             _SingleCard(),
+            _SingleCard(),
           ],
         ),
       ],
@@ -22,6 +23,13 @@ class _SingleCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      margin: EdgeInsets.all(15.0),
+      height: 180,
+      decoration: BoxDecoration(
+        color: Color.fromRGBO(62, 66, 107, 0.7),
+        borderRadius: BorderRadius.circular(20.0),
+      ),
+    );
   }
 }
