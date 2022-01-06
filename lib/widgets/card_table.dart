@@ -9,8 +9,16 @@ class CardTable extends StatelessWidget {
       children: const [
         TableRow(
           children: [
-            _SingleCard(),
-            _SingleCard(),
+            _SingleCard(
+              icon: Icons.pie_chart_outline,
+              color: Colors.blue,
+              text: "General",
+            ),
+            _SingleCard(
+              icon: Icons.pie_chart_outline,
+              color: Colors.blue,
+              text: "General",
+            ),
           ],
         ),
       ],
@@ -19,7 +27,16 @@ class CardTable extends StatelessWidget {
 }
 
 class _SingleCard extends StatelessWidget {
-  const _SingleCard({Key? key}) : super(key: key);
+  const _SingleCard({
+    Key? key,
+    required this.icon,
+    required this.color,
+    required this.text,
+  }) : super(key: key);
+
+  final IconData icon;
+  final Color color;
+  final String text;
 
   @override
   Widget build(BuildContext context) {
@@ -32,19 +49,19 @@ class _SingleCard extends StatelessWidget {
       ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: const [
+        children: [
           CircleAvatar(
-            backgroundColor: Colors.blue,
+            backgroundColor: color,
             child: Icon(
-              Icons.pie_chart_outline,
+              icon,
               size: 35,
             ),
             radius: 30,
           ),
-          SizedBox(height: 10.0),
+          const SizedBox(height: 10.0),
           Text(
-            "General",
-            style: TextStyle(
+            text,
+            style: const TextStyle(
               color: Colors.blue,
               fontSize: 18.0,
             ),
