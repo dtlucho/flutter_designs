@@ -24,7 +24,33 @@ class Background extends StatelessWidget {
         // Gradient
         Container(decoration: boxDecoration),
         // Box
+        const Positioned(top: -100, left: -30, child: _Box()),
       ],
+    );
+  }
+}
+
+class _Box extends StatelessWidget {
+  const _Box({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Transform.rotate(
+      angle: -pi / 5,
+      child: Container(
+        width: 360,
+        height: 360,
+        decoration: BoxDecoration(
+          color: Colors.pink,
+          borderRadius: BorderRadius.circular(80.0),
+          gradient: const LinearGradient(
+            colors: [
+              Color.fromRGBO(236, 98, 188, 1),
+              Color.fromRGBO(251, 142, 172, 1),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
