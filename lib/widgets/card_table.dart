@@ -15,9 +15,37 @@ class CardTable extends StatelessWidget {
               text: "General",
             ),
             _SingleCard(
-              icon: Icons.pie_chart_outline,
-              color: Colors.blue,
-              text: "General",
+              icon: Icons.car_rental,
+              color: Colors.pinkAccent,
+              text: "Transport",
+            ),
+          ],
+        ),
+        TableRow(
+          children: [
+            _SingleCard(
+              icon: Icons.shop,
+              color: Colors.purple,
+              text: "Shopping",
+            ),
+            _SingleCard(
+              icon: Icons.cloud,
+              color: Colors.purpleAccent,
+              text: "Bill",
+            ),
+          ],
+        ),
+        TableRow(
+          children: [
+            _SingleCard(
+              icon: Icons.movie,
+              color: Colors.deepPurple,
+              text: "Entertainment",
+            ),
+            _SingleCard(
+              icon: Icons.local_grocery_store,
+              color: Colors.green,
+              text: "Grocery",
             ),
           ],
         ),
