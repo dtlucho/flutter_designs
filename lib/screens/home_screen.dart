@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_designs/widgets/background.dart';
+import 'package:flutter_designs/widgets/page_title.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -23,6 +24,13 @@ class _HomeBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SingleChildScrollView();
+    return SingleChildScrollView(
+      child: Column(
+        children: const [
+          // Titles
+          PageTitle(),
+        ],
+      ),
+    );
   }
 }
