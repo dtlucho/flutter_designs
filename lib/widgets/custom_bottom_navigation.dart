@@ -5,10 +5,22 @@ class CustomBotomNavigationBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.red,
-      width: double.infinity,
-      height: 200,
+    return BottomNavigationBar(
+      selectedItemColor: Colors.pink,
+      items: [
+        BottomNavigationBarItem(
+          icon: Icon(Icons.calendar_today_outlined),
+          label: "Menu",
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.calendar_today_outlined),
+          label: "Menu",
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.calendar_today_outlined),
+          label: "Menu",
+        ),
+      ],
     );
   }
 }
